@@ -14,7 +14,7 @@ class SongCard extends Component {
                 {this.props?.music}: Music, {this.props.lyrics}: Lyrics, {this.props.vocals}: Vocals
                 <Accordion>
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header>Vote</Accordion.Header>
+                        <Accordion.Header>Vote for this song</Accordion.Header>
                         <Accordion.Body>
                             <VotingBlock id={this.props.id} username={this.props.username}/>
                         </Accordion.Body>

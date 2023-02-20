@@ -4,7 +4,7 @@ const sendVotes = async (votes) => {
     const body = new URLSearchParams(votes);
     try {
         console.log(votes);
-        const response = await fetch("http://localhost:6060/addVote", {
+        const response = await fetch("https://4f6aem2us2.execute-api.us-east-1.amazonaws.com/Prod/addVote", {
             method: 'POST',
             body: body,
             redirect: 'follow'
